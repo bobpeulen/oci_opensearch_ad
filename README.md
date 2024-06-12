@@ -1,1 +1,1 @@
-# oci_opensearch_ad
+# OCI OpenSearch - Anomaly Detection LiveLabs
