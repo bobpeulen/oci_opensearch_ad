@@ -18,4 +18,8 @@
 # Lab 3
 - Create a index and add data to to the index
 - Enable Anomaly Detection in OCI OpenSearch
-- 
+
+
+In OCI OpenSearch
+- Create index pattern
+- Create visualisation. Last 24 hours. Set Minimum interval to Minute.  
