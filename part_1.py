@@ -1,8 +1,8 @@
+import os
 os.system("pip install oci opensearch-py datetime random subprocess json warnings")
 
 ### imports
 import oci
-import os
 import random
 from json import loads, dumps
 from urllib.request import urlopen 
