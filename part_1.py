@@ -7,10 +7,7 @@ import random
 from json import loads, dumps
 from urllib.request import urlopen 
 import subprocess
-import pandas as pd
 from random import Random
-from retry import retry
-import concurrent.futures
 import argparse
 from opensearchpy import OpenSearch, RequestsHttpConnection
 from opensearchpy import helpers
