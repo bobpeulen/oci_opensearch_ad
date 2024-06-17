@@ -1,19 +1,8 @@
-import pip
-
-def import_or_install(package):
-    try:
-        __import__(package)
-        print("Imported")
-    except ImportError:
-        pip.main(['install', package])   
-
-list_of_packages = ['oci','opensearch-py','datetime','random','subprocess']        
-for package in list_of_packages:
-    import_or_install(package)
+import os
+os.system("pip install oci pandas opensearch-py datetime")
 
 ### imports
 import oci
-import os
 import random
 from json import loads, dumps
 from urllib.request import urlopen 
