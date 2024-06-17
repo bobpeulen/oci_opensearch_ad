@@ -1,15 +1,4 @@
-import pip
-
-def import_or_install(package):
-    try:
-        __import__(package)
-        print("Imported")
-    except ImportError:
-        pip.main(['install', package])   
-
-list_of_packages = ['oci','opensearch-py','datetime','random','subprocess']        
-for package in list_of_packages:
-    import_or_install(package)
+!pip install oci opensearch-py datetime random subprocess json warnings
 
 ### imports
 import oci
