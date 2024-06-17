@@ -1,5 +1,5 @@
 import os
-os.system("pip install --target ./ pandas opensearch-py datetime")
+os.system("pip install --target ./ opensearch-py")
 
 ### imports
 import oci
