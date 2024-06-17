@@ -1,4 +1,4 @@
-!pip install oci opensearch-py datetime random subprocess json warnings
+os.system("pip install oci opensearch-py datetime random subprocess json warnings")
 
 ### imports
 import oci
