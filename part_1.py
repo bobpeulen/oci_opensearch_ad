@@ -1,5 +1,5 @@
 import os
-os.system("pip install oci pandas time numpy opensearch-py datetime random subprocess json warnings")
+os.system("pip install oci pandas numpy opensearch-py datetime random subprocess json warnings")
 
 ### imports
 import oci
