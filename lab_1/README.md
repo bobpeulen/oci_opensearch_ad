@@ -42,10 +42,29 @@ In this lab, you will:
 
 ## Task 2: Create an OCI OpenSearch Cluster
 
+1. Click on the hamburger menu, go to **Databases** and following click on **OpenSearch**. In the next screen, click on **Create Cluster**.
 
+   ![lab_opensearch_1](images/opensearch_1.png)
 
-1. Create OCI OpenSearch in private subnet
-2. 
+2. In the **Configure cluster** screen. Add a logical name to the **Name** box. Make sure the software version is 2.11.0. Optionally, add your e-mail to the contact e-mail box. Click on **Next**
+
+3. In the **Configure security** screen, add a **username** and **password**. You will need these credentials later. Click on **Next**.
+
+4. In the **Configure nodes** screen, leave the default settings as they. Optionally, you may increase the nodes. Click on **Next**.
+
+5. In the **Configure networking** screen, please select the VCN you just created and select the associated **Private subnet**. Click on **Next**.
+
+6. Review the summary and click on **Create cluster**. After, click on **View details**. The creation of a cluster might take several minutes. Step inside the cluster by clicking the name.
+
+   ![lab_opensearch_2](images/opensearch_2.png)
+
+   ![lab_opensearch_3](images/opensearch_3.png)
+
+7. When the OpenSearch Cluster has the **State: Active** (green status), step inside the cluster overview page and copy to a local notepad the:
+   * **API endpoint** This is the endpoint used to create the index and add your data.
+   * **OpenSearch Dashboard private IP** This is the private IP of the dashboard. You will use this private IP to open the dashboard.
+
+   ![lab_opensearch_4](images/opensearch_4.png)
 
 ## Task 3: Create an Oracle Notification Service (ONS) topic
 
