@@ -15,8 +15,10 @@ Estimated Workshop Time: 1 hour 30 minutes
 In this workshop, you will follow multiple labs. For each lab, the individual steps are outlines below.
 
 **Lab 1 - Get started**
+* Create a VCN and configure the ports
 * Create an OCI OpenSearch Cluster
 * Create an Oracle Notification Service (ONS) topic
+* Create a jumphost to access the dashboards
   
 **Lab 2 - Access the Dashboard and index creation**
 * Access the OpenSearch Dashboard
