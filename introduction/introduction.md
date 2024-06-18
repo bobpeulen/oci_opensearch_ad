@@ -2,14 +2,14 @@
 
 ## About this Workshop
 
-This workshop covers xx
+This workshop runs through the steps to create and start an Anomaly Detection detector in [OCI OpenSearch](https://www.oracle.com/uk/cloud/search/). You will start by provisioning an OCI OpenSearch cluster and set up a topic in the OCI Notification Service. Afterwards, you will create a new index, add sample data to the index, and create an Anomaly Detection detector. Once implemented, using the Oracle Cloud Shell, you will run a script to feed new data every couple of seconds to your Anomaly Detection detector. Lastly, you will set up a trigger to receive automated e-mail notifications, using Oracle Notification Service, when anomalous behaviour in your data is detected. 
 
-Estimated Workshop Time: 1 hour 45 minutes
+Estimated Workshop Time: 1 hour 30 minutes
 
 
-
-Notes:
+## Prerequisites:
 * Please run the workshop in your home region. You will use Oracle Cloud Shell to access the OCI OpenSearch cluster, which is limited to your home region because of networking requirements.
+* Please add the appropriate policies for [Cloud Shell](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/cloudshellintro.htm), [OCI OpenSearch](https://docs.oracle.com/en-us/iaas/Content/search-opensearch/Concepts/ocisearchpermissions.htm), and [Oracle Notification Service](https://docs.oracle.com/en-us/iaas/Content/Notification/Concepts/notificationoverview.htm).
 
 
 *The video below is an example of the final result when all steps have been performed*
@@ -21,20 +21,22 @@ Notes:
 
 In this workshop, you will follow multiple labs. For each lab, the individual steps are outlines below.
 
-**Lab 1.**
-* xx
 
-**Lab 2.**
-* Cx
-
-**Lab 3.**
-* x
-
-**Lab 4.**
-* Ox
-
-**Lab 5.**
-* Stx
+**Lab 1 - Get started**
+* Create an OCI OpenSearch Cluster
+* Create an Oracle Notification Service (ONS) topic
+  
+**Lab 2 - Access the Dashboard and index creation**
+* Access the OpenSearch Dashboard
+* Create a new index and add data to to the index using Oracle Cloud Shell
+  
+**Lab 3 - Create an Anomaly Detection detector**
+* Create an Anomaly Detection Detector in OCI OpenSearch
+* Set up automated e-mail notification using ONS
+  
+**Lab 4 - Start near real-time Anomaly Detection**
+* Start the real-time Anomaly Detection Detector using Oracle Cloud Shell
+* Review automatic e-mail notifaction
 
 
 ## Prerequisites
