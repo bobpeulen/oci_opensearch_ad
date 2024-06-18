@@ -16,9 +16,12 @@ In this lab, you will:
 
 ## Task 1: Create an Anomaly Detection Detector in OCI OpenSearch
 
-1.	From the Oracle Cloud homepage, click on the hamburger icon, click on **Networking** and following click on **Virtual Cloud Networks**.
-   
-    ![lab_vcn_1](images/1.png)
+1.	Return to the OpenSearch dashboard. Click on the hamburger menu button and under **OpenSearch Plugins** select **Anomaly Detection**
+
+2.	Click on **Create detector** to configure the anomaly detection.
+
+  	![lab_ad_1](images/ad_1.png)
+  	![lab_ad_2](images/ad_1.png)
 
 
 ## Task 2: Set up automated e-mail notification using ONS
