@@ -11,16 +11,13 @@ Estimated Workshop Time: 1 hour 30 minutes
 * Please run the workshop in your home region. You will use Oracle Cloud Shell to access the OCI OpenSearch cluster, which is limited to your home region because of networking requirements.
 * Please add the appropriate policies for [Cloud Shell](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/cloudshellintro.htm), [OCI OpenSearch](https://docs.oracle.com/en-us/iaas/Content/search-opensearch/Concepts/ocisearchpermissions.htm), and [Oracle Notification Service](https://docs.oracle.com/en-us/iaas/Content/Notification/Concepts/notificationoverview.htm).
 
-
 *The video below is an example of the final result when all steps have been performed*
 
-[](youtube:O-ngsxftmi4)
+---- ADD VIDEO
 
-### Objectives
-
+## Objectives
 
 In this workshop, you will follow multiple labs. For each lab, the individual steps are outlines below.
-
 
 **Lab 1 - Get started**
 * Create an OCI OpenSearch Cluster
