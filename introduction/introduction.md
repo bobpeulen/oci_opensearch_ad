@@ -6,6 +6,12 @@ This workshop covers xx
 
 Estimated Workshop Time: 1 hour 45 minutes
 
+
+
+Notes:
+* Please run the workshop in your home region. You will use Oracle Cloud Shell to access the OCI OpenSearch cluster, which is limited to your home region.
+
+
 *The video below is an example of the final result when all steps have been performed*
 
 [](youtube:O-ngsxftmi4)
