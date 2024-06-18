@@ -30,7 +30,7 @@ In this workshop, you will follow multiple labs. For each lab, the individual st
   
 **Lab 4 - Start near real-time Anomaly Detection**
 * Start the real-time Anomaly Detection Detector using Oracle Cloud Shell
-* Review automatic e-mail notifaction
+* Review automatic e-mail notification
 
 
 ## Prerequisites
