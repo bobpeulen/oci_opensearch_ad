@@ -33,17 +33,21 @@ Second, you will create an API Key. This API Key is needed to authenticate yours
 
 ## Task 3: Create an Oracle Notification Service (ONS) topic
 
-Third,
+In this task, you will create an ONS topic and add your personal or work-related e-mail to the service. At the end of the workshop, the ONS topic will be invoked to report detected anomalies directly in your e-mail.
 
 1. Go to the Oracle Cloud homepage and click on the hamburger menu. Following, click on **Developer Services** and click next on **Notifications**
 2. On the next page, click on **Create Topic**. Add a name to the **Name** box and click on **Create**.
 3. Click on the newly created topic to open the topic. When the topic is not directly visible, refresh the page.
-4. Click on **Create Subscription**. Use **E-mail" as protocol and add your work or personal e-mail to the **Email" box. Click on **Create**.
+4. Click on **Create Subscription**. Use **E-mail** as protocol and add your work or personal e-mail to the **Email" box. Click on **Create**.
+   
    ![lab_1_ons_1](images/ons_1.png)
+   
    ![lab_1_ons_2](images/ons_2.png)
+   
    ![lab_1_ons_3](images/ons_3.png)
-5. The notification service has sent you an e-mail. Please go to your personal or work-related inbox and click on **Confirm Subscription**.
-6. Return to your created topic and copy the Topic's OCID. You will need this OCID later.
+
+6. The notification service has sent you an e-mail. Please go to your personal or work-related inbox and click on **Confirm Subscription**.
+7. Return to your created topic and copy the Topic's OCID. You will need this OCID later.
    ![lab_1_ons_4](images/ons_4.png)
 
 ## Task 4: Create a jumphost to access the dashboards
