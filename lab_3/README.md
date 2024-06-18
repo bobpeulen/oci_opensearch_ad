@@ -70,13 +70,13 @@ In this taks, you will set an alert based on the anomaly detection detector. Whe
    * Select **Oracle ONS** as **Channel type**
    * Copy the ONS OCID in the **ONS Topic OCID**. You copied this OCID in Lab 1, Task 3.
      
-   ![lab_alert_6](images/alert_6.png)
+    ![lab_alert_6](images/alert_6.png)
    
-   ![lab_alert_7](images/alert_7.png)
+     ![lab_alert_7](images/alert_7.png)
 
 10. Click on **Send test message**. This will trigger an example message and should appear in your inbox. See an example of a successful response in the below screenshots.
 
-   ![lab_alert_8](images/alert_8.png)
+    ![lab_alert_8](images/alert_8.png)
 
 11. When successful, click on **Create**. This will create the channel.
 
