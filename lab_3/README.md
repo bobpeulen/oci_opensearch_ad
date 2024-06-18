@@ -1,4 +1,4 @@
-![image](https://github.com/bobpeulen/oci_opensearch_ad/assets/75362416/bfd667dc-c331-4ed8-872b-ae92426bc631)# Lab 3 - Create an Anomaly Detection detector
+# Lab 3 - Create an Anomaly Detection detector
 
 ## Introduction
 
