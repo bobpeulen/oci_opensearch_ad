@@ -26,9 +26,9 @@ In this lab, you will:
 
 ## Task 2: Create an OCI OpenSearch Cluster
 
-Second, you will create an API Key. This API Key is needed to authenticate yourselves to invoke or use other services. Both APEX and OCI Data Science will need your API Key.
 
-1. In the top-right corner, click the person Icon.
+
+1. Create OCI OpenSearch in private subnet
 2. 
 
 ## Task 3: Create an Oracle Notification Service (ONS) topic
@@ -53,8 +53,7 @@ In this task, you will create an ONS topic and add your personal or work-related
 
 ## Task 4: Create a jumphost to access the dashboards
 
-
-1.	C
+1.	Create jumphost in the public subnet
 
 
 You may now **proceed to the next lab.**
