@@ -4,7 +4,7 @@
 
 # Lab 1 - Get started
 - Create an OCI OpenSearch Cluster
-- Create a Oracle Notification Service (ONS) topic
+- Create an Oracle Notification Service (ONS) topic
 
 # Lab 2 - Access the Dashboard and index creation
 - Access the OpenSearch Dashboard
