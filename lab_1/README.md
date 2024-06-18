@@ -48,6 +48,7 @@ In this task, you will create an ONS topic and add your personal or work-related
 
 6. The notification service has sent you an e-mail. Please go to your personal or work-related inbox and click on **Confirm Subscription**.
 7. Return to your created topic and copy the Topic's OCID. You will need this OCID later.
+   
    ![lab_1_ons_4](images/ons_4.png)
 
 ## Task 4: Create a jumphost to access the dashboards
