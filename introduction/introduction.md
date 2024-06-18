@@ -6,11 +6,6 @@ This workshop runs through the steps to create and start an Anomaly Detection de
 
 Estimated Workshop Time: 1 hour 30 minutes
 
-
-## Prerequisites:
-* Please run the workshop in your home region. You will use Oracle Cloud Shell to access the OCI OpenSearch cluster, which is limited to your home region because of networking requirements.
-* Please add the appropriate policies for [Cloud Shell](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/cloudshellintro.htm), [OCI OpenSearch](https://docs.oracle.com/en-us/iaas/Content/search-opensearch/Concepts/ocisearchpermissions.htm), and [Oracle Notification Service](https://docs.oracle.com/en-us/iaas/Content/Notification/Concepts/notificationoverview.htm).
-
 *The video below is an example of the final result when all steps have been performed*
 
 ---- ADD VIDEO
@@ -38,6 +33,8 @@ In this workshop, you will follow multiple labs. For each lab, the individual st
 
 ## Prerequisites
 * An Oracle Cloud Account - Please view this workshop's LiveLabs landing page to see which environments are supported
+* Please run the workshop in your home region. You will use Oracle Cloud Shell to access the OCI OpenSearch cluster, which is limited to your home region because of networking requirements.
+* Please add the appropriate policies for [Cloud Shell](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/cloudshellintro.htm), [OCI OpenSearch](https://docs.oracle.com/en-us/iaas/Content/search-opensearch/Concepts/ocisearchpermissions.htm), and [Oracle Notification Service](https://docs.oracle.com/en-us/iaas/Content/Notification/Concepts/notificationoverview.htm).
 
 ## Acknowledgements
 * **Authors**:
