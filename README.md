@@ -2,17 +2,11 @@
 
 
 
-# Steps
-- Create an OCI OpenSearch Cluster
-- Access the OpenSearch Dashboard
-- 
-
 # Lab 1
 - Create an OCI OpenSearch Cluster
 - Access the OpenSearch Dashboard
-- 
+  
 # Lab 2
-- Create an OCI Data Science notebook session
 - Create a Oracle Notification Service topic
 
 # Lab 3
