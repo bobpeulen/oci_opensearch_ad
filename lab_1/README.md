@@ -21,19 +21,19 @@ In this lab, you will:
 
 2.	Click on **Start VCN Wizard**, choose the **Create VCN with Internet Connectivity** option and click on **Start VCN Wizard** again.
    
-    ![lab_vcn_1](images/vnc_1.png)
+    ![lab_vcn_1](images/vcn_1.png)
   	
-  	![lab_vcn_2](images/vnc_2.png)
+  	![lab_vcn_2](images/vcn_2.png)
 
 3. Add a logical name in the **VCN Name** box. Following, click on **Next** and then click on **Create**. This will create a VCN with a public and a private subnet. When all items are completed, click on **View VCN**.
-    ![lab_vcn_3](images/vnc_3.png)
-    ![lab_vcn_4](images/vnc_4.png)
+    ![lab_vcn_3](images/vcn_3.png)
+    ![lab_vcn_4](images/vcn_4.png)
    
 4. To make sure you can access the OCI OpenSearch cluster and dashboard, we have to open two ports. On the left side, click on **Security Lists** and following click on **Security list for private_subnet-[name of VCN]**
-    ![lab_vcn_5](images/vnc_5.png)
+    ![lab_vcn_5](images/vcn_5.png)
 
 5. In the security list, click on "Add Ingress Rules**. Add "0.0.0.0/0" to the **Source CIDR** box and add "9200,5601" to the **Destination Port Range**. Leave the other boxes empty or default. Click on**Add Ingress Rules**.
-    ![lab_vcn_6](images/vnc_6.png)
+    ![lab_vcn_6](images/vcn_6.png)
 
 
 ## Task 2: Create an OCI OpenSearch Cluster
