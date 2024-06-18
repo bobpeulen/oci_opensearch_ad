@@ -59,9 +59,9 @@ In this taks, you will set an alert based on the anomaly detection detector. Whe
   
      More information what algorithm is used and what the scores indicate can be found on the [OpenSearch pages](https://opensearch.org/docs/latest/observing-your-data/ad/index/).
 
-8. When you have changed the parameters of the trigger, click on **Manage channels**. This will open a new page in your browser. Do not close the previous page.
-
    ![lab_alert_4](images/alert_4.png)
+
+8. When you have changed the parameters of the trigger, click on **Manage channels**. This will open a new page in your browser. Do not close the previous page.
 
    ![lab_alert_5](images/alert_5.png)
 
