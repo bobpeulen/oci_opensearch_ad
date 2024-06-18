@@ -23,6 +23,13 @@ In this lab, you will:
   	![lab_ad_1](images/ad_1.png)
   	![lab_ad_2](images/ad_2.png)
 
+3. Etc
+
+4. etc
+
+5. etc
+
+
 
 ## Task 2: Set up automated e-mail notification using ONS
 
