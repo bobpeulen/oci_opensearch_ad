@@ -32,9 +32,11 @@ In this lab, you will:
     ![lab_vcn_4](images/vcn_4.png)
    
 5. To make sure you can access the OCI OpenSearch cluster and dashboard, we have to open two ports. On the left side, click on **Security Lists** and following click on **Security list for private_subnet-[name of VCN]**
+   
     ![lab_vcn_5](images/vcn_5.png)
 
-6. In the security list, click on "Add Ingress Rules**. Add "0.0.0.0/0" to the **Source CIDR** box and add "9200,5601" to the **Destination Port Range**. Leave the other boxes empty or default. Click on**Add Ingress Rules**.
+7. In the security list, click on "Add Ingress Rules**. Add "0.0.0.0/0" to the **Source CIDR** box and add "9200,5601" to the **Destination Port Range**. Leave the other boxes empty or default. Click on**Add Ingress Rules**.
+   
     ![lab_vcn_6](images/vcn_6.png)
 
 
