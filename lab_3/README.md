@@ -37,11 +37,11 @@ In this taks, you will set an alert based on the anomaly detection detector. Whe
 
 1. In the overview page of the just created detector, click on the **Set up alerts** button.
 
-2. In the **Create Monitor** page, add a name to the **Monitor name**, select **Per query monitor** and select **Anomaly Detector** as the monitor defining method.
-
-3. In the **Detector** list, make sure to select the detector you just created. 
-
    ![lab_alert_1](images/alert_1.png)
+
+3. In the **Create Monitor** page, add a name to the **Monitor name**, select **Per query monitor** and select **Anomaly Detector** as the monitor defining method.
+
+4. In the **Detector** list, make sure to select the detector you just created. 
    
    ![lab_alert_2](images/alert_2.png)
 
