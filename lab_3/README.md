@@ -53,7 +53,7 @@ In this taks, you will set an alert based on the anomaly detection detector. Whe
 
 7. In the trigger overview, change the following:
    * Change the **name** to "trigger_anomaly_detection".
-   * Make sure the **Trigger type** is "Anomaly Detection grade and confidence.
+   * Make sure the **Trigger type** is "Anomaly Detection grade and confidence".
    * Change the **Anomaly grade treshold** to **IS ABOVE** 0.80.
    * Change the **Anomaly confidence threshold** to **IS ABOVE** 0.6.
   
