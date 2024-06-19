@@ -86,9 +86,11 @@ In this task, you will create an ONS topic and add your personal or work-related
    
    ![lab_1_ons_4](images/ons_4.png)
 
-## Task 4: Create a jumphost to access the dashboards
+## Task 4: Create a compute host with NGINX to access the dashboards
 
-1.	Create jumphost in the public subnet
+In this example we choose Oracle Linux, you can choose any O.S., please note that pahts may be slightly different on specific opereating systems.
+
+1.	Create a compute VM with these options:
 
 
 You may now **proceed to the next lab.**
