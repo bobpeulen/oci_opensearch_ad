@@ -4,7 +4,7 @@
 
 This workshop runs through the steps to create and start an Anomaly Detection detector in [OCI OpenSearch](https://www.oracle.com/uk/cloud/search/). You will start by provisioning an OCI OpenSearch cluster and set up a topic in the [OCI Notification Service](https://docs.oracle.com/en-us/iaas/Content/Notification/Concepts/notificationoverview.htm). Afterwards, you will create a new index, add sample data to the index, and create an Anomaly Detection detector. Once implemented, using the [Oracle Cloud Shell](https://www.oracle.com/devops/cloud-shell/), you will run a script to feed new data every couple of seconds to your Anomaly Detection detector. Lastly, you will set up a trigger to receive automated e-mail notifications, using Oracle Notification Service, when anomalous behaviour in your data is detected. 
 
-Estimated Workshop Time: 1 hour 30 minutes
+Estimated Workshop Time: 1 hour 45 minutes
 
 *The video below is an example of the final result when all steps have been performed*
 
