@@ -75,10 +75,6 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
     firewall-cmd --permanent --zone=public --add-service=http
     ```
 
-1.	From the Oracle Cloud homepage, click on the hamburger icon, click on **Networking** and following click on **Virtual Cloud Networks**.
-   
-    ![lab_vcn_1](images/1.png)
-
 
 ## Task 2: Create a new index and add data to to the index using the compute
 
