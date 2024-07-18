@@ -18,11 +18,10 @@ In this workshop, you will follow multiple labs. For each lab, the individual st
 * Create a VCN and configure the ports
 * Create an OCI OpenSearch Cluster
 * Create an Oracle Notification Service (ONS) topic
-* Create a jumphost to access the dashboards
   
 **Lab 2 - Access the Dashboard and index creation**
-* Access the OpenSearch Dashboard
-* Create a new index and add data to to the index using the VM
+* Create a compute host with NGINX to access the dashboards
+* Create a new index and add data to to the index using the compute
   
 **Lab 3 - Create an Anomaly Detection detector**
 * Create an Anomaly Detection Detector in OCI OpenSearch
