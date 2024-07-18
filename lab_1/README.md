@@ -90,7 +90,22 @@ In this task, you will create an ONS topic and add your personal or work-related
 
 In this example we choose Oracle Linux, you can choose any O.S., please note that pahts may be slightly different on specific opereating systems.
 
-1.	Create a compute VM with these options:
+1.	Click on the hamburger menu, go to **Compute** and click on **Instances**. Click on **Create Instance**.
+
+   ![lab_1_compute_1](images/compute_1.png)
+   
+2.	Change the **Name** to NGINX-host. All default settings are fine, however, feel free to change the Instance Shape. In this example, we are using Oracle Linux 8 as image.
+3.	In the **networking options**, make sure to select the same VCN as you just created. Select the **Public Subnet**.
+
+   ![lab_1_compute_2](images/compute_2.png)
+
+4. In the **Add SSH Keys** box, make sure to either **Save private key** or upload your public key. For more information on the different options to connect to the instance, visit this [Connect to your instance](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/testingconnection.htm) page.
+5. When you completed the steps, click on **Create instance**. This will take 10 - 20 seconds before the instance is active.
+6. When the instance is **Active**, use the Public IP address and Username to SSH into the instance. See [here](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/testingconnection.htm) for more details on how to SSH into your instance.
+
+   ![lab_1_compute_3](images/compute_3.png)
+
+
 
 
 You may now **proceed to the next lab.**
