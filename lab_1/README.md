@@ -142,6 +142,11 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
 
    ![lab_1_compute_7](images/compute_7.png)
 
+13. When you closed and saves the config file. Run the below statement in the terminal to open the instance's firewall so it can accept and process http traffic towards the OpenSearch dashboards. The result should **success**.
+
+    ```
+    firewall-cmd --permanent --zone=public --add-service=http
+    ```
 
 
 You may now **proceed to the next lab.**
