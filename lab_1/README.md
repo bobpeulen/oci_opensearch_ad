@@ -110,7 +110,39 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
     sudo su
     yum install nginx
     ```
-8. 
+
+   ![lab_1_compute_4](images/compute_4.png)
+    
+8. In Oracle Cloud, in the overview page of your OpenSearch cluster. You will find the **OpenSearch Dashboard Private IP**. NGINX will use this private IP to forward the HTTP traffic towards. Find the Private IP and use the private IP in the next step.
+
+   ![lab_1_compute_5](images/compute_5.png)
+
+9. Copy the below statement and replace the **[ADD_YOUR_DASHBOARD_PRIVATE_IP_HERE]** with your dashboard's private IP. 
+   ```
+    upstream backend {
+           server [ADD_YOUR_DASHBOARD_PRIVATE_IP_HERE]:5601;}
+   ```
+
+10. Go back to your terminal and run the below. This will open the config file for the NGINX. In this config file, we can add the routing: from https traffic towards the OpenSearch dashboards using the public IP of the instance you are working on.
+    ```
+    nano /etc/nginx/nginx.conf
+    ```
+
+11. The previous command opens the file, you can now edit the file. Use the arrows to go down to **http** section. Add between **access_log** and **sendfile** a new line, being the statement from step 9. Make sure you changed the Dashboard's private IP.
+
+   ![lab_1_compute_6](images/compute_6.png)
+
+12. When you added the statement, scroll down until you see **location**. Similar to the previous step, change the file using the below statement. When done, hit **CRTL + X** to close the file, select **Y** to save the changes made and following hit enter to overwrite the current file.
+
+    ```
+    location / {
+          proxy_pass https://backend;
+        }
+    ```
+
+   ![lab_1_compute_7](images/compute_7.png)
+
+
 
 You may now **proceed to the next lab.**
 
