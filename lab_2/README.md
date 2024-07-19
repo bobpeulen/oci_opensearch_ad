@@ -72,7 +72,8 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
 13. When you closed and saves the config file. Run the below statement in the terminal to open the instance's firewall so it can accept and process http traffic towards the OpenSearch dashboards. The result should **success**.
 
     ```
-    firewall-cmd --permanent --zone=public --add-service=http
+    firewall-cmd --add-service=http --permanent
+    firewall-cmd --reload
     ```
 
 
