@@ -78,13 +78,19 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
     ```
 
 #change user permission
-chown -R nginx:nginx /var/lib/nginx
+   ```
+   chown -R nginx:nginx /var/lib/nginx
+   ```
 
 #restart
-systemctl restart nginx
+   ```
+   systemctl restart nginx
+   ```
 
 #review the status
-systemctl status nginx
+   ```
+   systemctl status nginx
+   ```
 
 #open the public ip, including the /
 
@@ -92,8 +98,9 @@ systemctl status nginx
 
 ## optional
 #debug 
-tail -f /var/log/nginx/access.log -f /var/log/nginx/error.log
-
+   ```
+   tail -f /var/log/nginx/access.log -f /var/log/nginx/error.log
+   ```
 
 ## Task 2: Create a new index and add data to to the index using the compute
 
