@@ -92,7 +92,7 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
    systemctl status nginx
    ```
 
-#open the public ip, including the /
+#open the public ip, including the /   - make sure you are not on VPN
 
 
 
