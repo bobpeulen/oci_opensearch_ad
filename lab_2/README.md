@@ -32,10 +32,10 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
 
    ![lab_1_compute_3](images/compute_3.png)
 
-7. In your terminal of choice, run the following two commands. When prompted, hit **"Y"** and hit **Enter**. The below will install NGINX on your instance. When finished, the terminal should state **Complete!**.
+7. In your terminal of choice, run the following two commands. The below will install NGINX on your instance. When finished, the terminal should state **Complete!**.
     ```
     sudo su
-    yum install nginx
+    yum install nginx -y
     ```
 
    ![lab_1_compute_4](images/compute_4.png)
