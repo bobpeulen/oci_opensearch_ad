@@ -69,12 +69,30 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
 
    ![lab_1_compute_7](images/compute_7.png)
 
+
 13. When you closed and saves the config file. Run the below statement in the terminal to open the instance's firewall so it can accept and process http traffic towards the OpenSearch dashboards. The result should **success**.
 
     ```
     firewall-cmd --add-service=http --permanent
     firewall-cmd --reload
     ```
+
+#change user permission
+chown -R nginx:nginx /var/lib/nginx
+
+#restart
+systemctl restart nginx
+
+#review the status
+systemctl status nginx
+
+#open the public ip, including the /
+
+
+
+## optional
+#debug 
+tail -f /var/log/nginx/access.log -f /var/log/nginx/error.log
 
 
 ## Task 2: Create a new index and add data to to the index using the compute
