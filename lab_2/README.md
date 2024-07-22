@@ -34,11 +34,23 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
 
 7. In your terminal of choice, run the following command. The below will install NGINX on your instance. When finished, the terminal should state **Complete!**.
     ```
-    sudo su
-    yum install nginx -y
+    sudo yum install nginx -y
     ```
 
    ![lab_1_compute_4](images/compute_4.png)
+
+
+
+8. Run the below command in the terminal to make sure the NGINX service is enabled and that on reboot, the service automatically enables.
+   ```
+   sudo systemctl enable --now nginx.service
+   ```
+
+
+
+
+
+
     
 8. In Oracle Cloud, in the overview page of your OpenSearch cluster. You will find the **OpenSearch Dashboard Private IP**. NGINX will use this private IP to forward the HTTP traffic towards. Find the Private IP and use the private IP in the next step.
 
@@ -52,7 +64,7 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
 
 10. Go back to your terminal and run the below. This will open the config file for the NGINX. In this config file, we can add the routing: from https traffic towards the OpenSearch dashboards using the public IP of the instance you are working on.
     ```
-    nano /etc/nginx/nginx.conf
+    sudo nano /etc/nginx/nginx.conf
     ```
 
 11. The previous command opens the file, you can now edit the file. Use the arrows to go down to the **http** section. Add between **access_log** and **sendfile** a new line, being the statement from step 9. Make sure you changed the Dashboard's private IP.
@@ -73,8 +85,8 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
 13. When you closed and saved the config file. Run the below statement in the terminal to open the instance's firewall so it can accept and process http traffic towards the OpenSearch dashboards. The result should **success**.
 
     ```
-    firewall-cmd --add-service=http --permanent
-    firewall-cmd --reload
+    sudo firewall-cmd --add-service=http --permanent
+    sudo firewall-cmd --reload
     ```
 
 #change user permission
