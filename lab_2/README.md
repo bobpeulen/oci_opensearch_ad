@@ -89,19 +89,14 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
     sudo firewall-cmd --reload
     ```
 
-#change user permission
+#reload the config and restart service
    ```
-   chown -R nginx:nginx /var/lib/nginx
-   ```
-
-#restart
-   ```
-   systemctl restart nginx
+   sudo systemctl restart nginx
    ```
 
 #review the status
    ```
-   systemctl status nginx
+   sudo systemctl status nginx
    ```
 
 #open the public ip, including the /   - make sure you are not on VPN
