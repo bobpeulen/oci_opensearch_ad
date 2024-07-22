@@ -38,7 +38,7 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
     sudo setenforce 0
     ```
 
-7. Next, run the following command. The below will install NGINX on your instance. When finished, the terminal should state **Complete!**.
+8. Next, run the following command. The below will install NGINX on your instance. When finished, the terminal should state **Complete!**.
     ```
     sudo yum install nginx -y
     ```
@@ -47,31 +47,31 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
 
 
 
-8. Run the below command in the terminal to make sure the NGINX service is enabled and that on reboot, the service automatically enables.
+9. Run the below command in the terminal to make sure the NGINX service is enabled and that on reboot, the service automatically enables.
    ```
    sudo systemctl enable --now nginx.service
    ```
     
-9. In Oracle Cloud, in the overview page of your OpenSearch cluster. You will find the **OpenSearch Dashboard Private IP**. NGINX will use this private IP to forward the HTTP traffic towards. Find the Private IP and use the private IP in the next step.
+10. In Oracle Cloud, in the overview page of your OpenSearch cluster. You will find the **OpenSearch Dashboard Private IP**. NGINX will use this private IP to forward the HTTP traffic towards. Find the Private IP and use the private IP in the next step.
 
    ![lab_1_compute_5](images/compute_5.png)
 
-9. Copy the below statement and replace the **[ADD_YOUR_DASHBOARD_PRIVATE_IP_HERE]** with your dashboard's private IP. 
+11. Copy the below statement and replace the **[ADD_YOUR_DASHBOARD_PRIVATE_IP_HERE]** with your dashboard's private IP. 
    ```
     upstream backend {
            server [ADD_YOUR_DASHBOARD_PRIVATE_IP_HERE]:5601;}
    ```
 
-10. Go back to your terminal and run the below. This will open the config file for the NGINX. In this config file, we can add the routing: from https traffic towards the OpenSearch dashboards using the public IP of the instance you are working on.
+12. Go back to your terminal and run the below. This will open the config file for the NGINX. In this config file, we can add the routing: from https traffic towards the OpenSearch dashboards using the public IP of the instance you are working on.
     ```
     sudo nano /etc/nginx/nginx.conf
     ```
 
-11. The previous command opens the file, you can now edit the file. Use the arrows to go down to the **http** section. Add between **access_log** and **sendfile** a new line, being the statement from step 9. Make sure you changed the Dashboard's private IP.
+13. The previous command opens the file, you can now edit the file. Use the arrows to go down to the **http** section. Add between **access_log** and **sendfile** a new line, being the statement from step 9. Make sure you changed the Dashboard's private IP.
 
    ![lab_1_compute_6](images/compute_6.png)
 
-12. When you added the statement, scroll down until you see **location**. Similar to the previous step, change the file using the below statement. When done, hit **CRTL + X** to close the file, select **Y** to save the changes made and following hit enter to overwrite the current file.
+14. When you added the statement, scroll down until you see **location**. Similar to the previous step, change the file using the below statement. When done, hit **CRTL + X** to close the file, select **Y** to save the changes made and following hit enter to overwrite the current file.
 
     ```
     location / {
@@ -82,31 +82,35 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
    ![lab_1_compute_7](images/compute_7.png)
 
 
-13. When you closed and saved the config file. Run the below statement in the terminal to open the instance's firewall so it can accept and process http traffic towards the OpenSearch dashboards. The result should **success**.
+15. When you closed and saved the config file. Run the below statement in the terminal to open the instance's firewall so it can accept and process http traffic towards the OpenSearch dashboards. The result should **success**.
 
     ```
     sudo firewall-cmd --add-service=http --permanent
     sudo firewall-cmd --reload
     ```
 
-#reload the config and restart service
+16. Run the below commmand. This will reload the changed config and restart the NGIX service. After this change, the NGINX is active with the changes made.
    ```
    sudo systemctl restart nginx
    ```
 
-#review the status
+17. Optionally. You can review the status of the NGINX server by running the below command.
    ```
    sudo systemctl status nginx
    ```
 
-#open the public ip, including the /   - make sure you are not on VPN
+   ![lab_1_compute_8](images/compute_8.png)
 
-
-
-## optional
-#debug 
+18. You can now open the OCI OpenSearch dashboard by using the public IP. Use the public IP of you compute instance in any browser. Make sure to use **http://**. and make sure you are not on VPN. You can log in using the credentials you provided when creating the OCI OpenSearch cluster. Example:
    ```
-   tail -f /var/log/nginx/access.log -f /var/log/nginx/error.log
+   http://158.101.107.97/
+   ```
+   ![lab_1_compute_9](images/compute_9.png)
+
+
+19. Optional. When you have to run debugging or you would like to see the access or error logs, run the below command. 
+   ```
+   sudo tail -f /var/log/nginx/access.log -f /var/log/nginx/error.log
    ```
 
 ## Task 2: Create a new index and add data to to the index using the compute
