@@ -35,7 +35,7 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
 
 7. In your terminal of choice, run the following command. This will set SELinux to permissive temporarily. To make the change persistent, [follow these steps](https://community.oracle.com/customerconnect/discussion/636723/how-to-set-selinux-to-permissive-mode).
     ```
-    setenforce 0
+    sudo setenforce 0
     ```
 
 7. Next, run the following command. The below will install NGINX on your instance. When finished, the terminal should state **Complete!**.
