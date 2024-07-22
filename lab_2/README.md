@@ -2,20 +2,20 @@
 
 ## Introduction
 
-In this lab, you will access the OCI OpenSearch Dashboard.
+In this lab, you will access the OCI OpenSearch Dashboard using NGIX.
 
 *Estimated Time:* 20 minutes
 
 ### Objectives
 
 In this lab, you will:
-* Create a compute host with NGINX to access the dashboards
+* Create a compute instance with NGINX to access the dashboards
 * Create a new index and add data to to the index using the compute
 
 
 ## Task 1: Create a compute host with NGINX to access the dashboards
 
-In this example we choose Oracle Linux, you can choose any O.S., please note that pahts may be slightly different on specific opereating systems.
+In this example we choose Oracle Linux, you can choose any O.S., please note that paths may be slightly different on specific opereating systems.
 
 1.	Click on the hamburger menu, go to **Compute** and click on **Instances**. Click on **Create Instance**.
 
@@ -32,10 +32,9 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
 
    ![lab_1_compute_3](images/compute_3.png)
 
-7. In your terminal of choice, run the following two commands. The below will install NGINX on your instance. When finished, the terminal should state **Complete!**.
+7. In your terminal of choice, run the following command. The below will install NGINX on your instance. When finished, the terminal should state **Complete!**.
     ```
-    sudo su
-    yum install nginx -y
+    sudo yum install nginx -y
     ```
 
    ![lab_1_compute_4](images/compute_4.png)
@@ -52,10 +51,10 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
 
 10. Go back to your terminal and run the below. This will open the config file for the NGINX. In this config file, we can add the routing: from https traffic towards the OpenSearch dashboards using the public IP of the instance you are working on.
     ```
-    nano /etc/nginx/nginx.conf
+    sudo nano /etc/nginx/nginx.conf
     ```
 
-11. The previous command opens the file, you can now edit the file. Use the arrows to go down to **http** section. Add between **access_log** and **sendfile** a new line, being the statement from step 9. Make sure you changed the Dashboard's private IP.
+11. The previous command opens the file, you can now edit the file. Use the arrows to go down to the **http** section. Add between **access_log** and **sendfile** a new line, being the statement from step 9. Make sure you changed the Dashboard's private IP.
 
    ![lab_1_compute_6](images/compute_6.png)
 
@@ -70,11 +69,11 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
    ![lab_1_compute_7](images/compute_7.png)
 
 
-13. When you closed and saves the config file. Run the below statement in the terminal to open the instance's firewall so it can accept and process http traffic towards the OpenSearch dashboards. The result should **success**.
+13. When you closed and saved the config file. Run the below statement in the terminal to open the instance's firewall so it can accept and process http traffic towards the OpenSearch dashboards. The result should **success**.
 
     ```
-    firewall-cmd --add-service=http --permanent
-    firewall-cmd --reload
+    sudo firewall-cmd --add-service=http --permanent
+    sudo firewall-cmd --reload
     ```
 
 #change user permission
