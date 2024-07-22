@@ -32,7 +32,13 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
 
    ![lab_1_compute_3](images/compute_3.png)
 
-7. In your terminal of choice, run the following command. The below will install NGINX on your instance. When finished, the terminal should state **Complete!**.
+
+7. In your terminal of choice, run the following command. This will set SELinux to permissive temporarily. To make the change persistent, [follow these steps](https://community.oracle.com/customerconnect/discussion/636723/how-to-set-selinux-to-permissive-mode).
+    ```
+    setenforce 0
+    ```
+
+7. Next, run the following command. The below will install NGINX on your instance. When finished, the terminal should state **Complete!**.
     ```
     sudo yum install nginx -y
     ```
@@ -45,14 +51,8 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
    ```
    sudo systemctl enable --now nginx.service
    ```
-
-
-
-
-
-
     
-8. In Oracle Cloud, in the overview page of your OpenSearch cluster. You will find the **OpenSearch Dashboard Private IP**. NGINX will use this private IP to forward the HTTP traffic towards. Find the Private IP and use the private IP in the next step.
+9. In Oracle Cloud, in the overview page of your OpenSearch cluster. You will find the **OpenSearch Dashboard Private IP**. NGINX will use this private IP to forward the HTTP traffic towards. Find the Private IP and use the private IP in the next step.
 
    ![lab_1_compute_5](images/compute_5.png)
 
