@@ -63,9 +63,9 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
    ```
 
 12. Go back to your terminal and run the below. This will open the config file for the NGINX. In this config file, we can add the routing: from https traffic towards the OpenSearch dashboards using the public IP of the instance you are working on.
-    ```
-    sudo nano /etc/nginx/nginx.conf
-    ```
+       ```
+       sudo nano /etc/nginx/nginx.conf
+       ```
 
 13. The previous command opens the file, you can now edit the file. Use the arrows to go down to the **http** section. Add between **access_log** and **sendfile** a new line, being the statement from step 9. Make sure you changed the Dashboard's private IP.
 
@@ -90,28 +90,28 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
     ```
 
 16. Run the below commmand. This will reload the changed config and restart the NGIX service. After this change, the NGINX is active with the changes made.
-   ```
-   sudo systemctl restart nginx
-   ```
+      ```
+      sudo systemctl restart nginx
+      ```
 
 17. Optionally. You can review the status of the NGINX server by running the below command.
-   ```
-   sudo systemctl status nginx
-   ```
+      ```
+      sudo systemctl status nginx
+      ```
 
    ![lab_1_compute_8](images/compute_8.png)
 
 18. You can now open the OCI OpenSearch dashboard by using the public IP. Use the public IP of you compute instance in any browser. Make sure to use **http://**. and make sure you are not on VPN. You can log in using the credentials you provided when creating the OCI OpenSearch cluster. Example:
-   ```
-   http://158.101.107.97/
-   ```
+      ```
+      http://158.101.107.97/
+      ```
    ![lab_1_compute_9](images/compute_9.png)
 
 
 19. Optional. When you have to run debugging or you would like to see the access or error logs, run the below command. 
-   ```
-   sudo tail -f /var/log/nginx/access.log -f /var/log/nginx/error.log
-   ```
+      ```
+      sudo tail -f /var/log/nginx/access.log -f /var/log/nginx/error.log
+      ```
 
 ## Task 2: Create a new index and add data to to the index using the compute
 
