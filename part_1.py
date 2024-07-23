@@ -1,5 +1,5 @@
 import os
-os.system("pip install opensearch-py --user")
+os.system("pip3 install opensearch-py --user")
 
 ### imports
 import oci
