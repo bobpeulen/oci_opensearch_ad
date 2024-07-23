@@ -149,13 +149,9 @@ In this taks, you will create a new index in the OCI OpenSearch cluster and add 
    python oci_opensearch_ad/part_1.py -api_endpoint amaaaaaaeicj2tia3mnm2aeijfoshjdwhtlqugrnlvapkj5pa7nhoczudzfa.opensearch.us-ashburn-1.oci.oraclecloud.com -username bobpeulen -password mypassword123 -index_name index_ad
    ```
 
+   When you run the statement, you should see many rows like the below screenshot. This will run for a few seconds. The script is adding many rows to the index. That way, when you access the OCI OpenSearch dashboard in the next lab, you will have an index created and many rows already added to the index.
 
-4. xx
-
-
-
-
-
+   ![lab_2_opensearch_4](images/opensearch_4.png)
 
 
 You may now **proceed to the next lab.**
@@ -164,4 +160,4 @@ You may now **proceed to the next lab.**
 * **Authors**:
     * x
     * x
-* **Last Updated By/Date** -xa, July 2024
+* **Last Updated By/Date** -xa, August 2024
