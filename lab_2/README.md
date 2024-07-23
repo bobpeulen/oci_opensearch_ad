@@ -115,7 +115,9 @@ In this example we choose Oracle Linux, you can choose any O.S., please note tha
 
 ## Task 2: Create a new index and add data to to the index using the compute
 
+1. Using the credentials you created when you created the OCI OpenSearch cluster, log in the dashboards. When prompted for **Select your tenant**, select the **Private** options.
 
+   ![lab_2_opensearch_1](images/opensearch_1.png)
 
 
 
