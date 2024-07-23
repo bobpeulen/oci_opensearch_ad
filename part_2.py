@@ -87,6 +87,8 @@ def start_ad_loop(index_name, client):
 
 
 def main():
+
+    client = create_opensearch_client(api_endpoint, username, password)
     
     start_ad_loop(index_name, client)
 
