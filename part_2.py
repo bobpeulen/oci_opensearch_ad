@@ -45,8 +45,39 @@ def create_opensearch_client(api_endpoint, username, password):
     
     return client
 
+def add_ad_data(index_name, client):
+    
+    loop = 0
+    
+    ##List of 7 days (5 min apart)
+    list_of_dates = [dt.strftime('%Y-%m-%d %H:%M:%S') for dt in 
+                     datetime_range(datetime.now() - timedelta(days=7), datetime.now(), timedelta(minutes=5))]
+    
+    for date in list_of_dates:
+        
+        #convert string time to datetime object
+        timestamp = datetime_object = datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
 
-def start_ad_loop(index_name, client):
+        latency_min = round(random.uniform(300.1, 600.9),2)
+        latency_max = round(random.uniform(700.1, 3100.9),2)
+        latency_diff = latency_max - latency_min
+
+        print(f"Loading latency with min {latency_min}, max {latency_max}, on timestamp {timestamp}")
+
+        input_payload = {"@timestamp": timestamp,
+                        "latency_min": latency_min,
+                        "latency_max": latency_max,
+                        "latency_diff": latency_diff}
+
+        #add new row to the index
+        response = client.index(index = index_name, body = input_payload, id = loop, refresh = True)
+
+        #create next id
+        loop+=1
+        
+    return list_of_dates
+
+def start_ad_loop(index_name, client, list_of_dates):
     
     #get the last date in the list of dates
     last_date_used = list_of_dates[-1]
@@ -89,8 +120,10 @@ def start_ad_loop(index_name, client):
 def main():
 
     client = create_opensearch_client(api_endpoint, username, password)
+
+    list_of_dates = add_ad_data(index_name, client)
     
-    start_ad_loop(index_name, client)
+    start_ad_loop(index_name, client, list_of_dates)
 
 if __name__ == '__main__':
     main()
