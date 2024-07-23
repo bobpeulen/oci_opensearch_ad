@@ -149,7 +149,11 @@ In this taks, you will create a new index in the OCI OpenSearch cluster and add 
    python oci_opensearch_ad/part_1.py -api_endpoint amaaaaaaeicj2tia3mnm2aeijfoshjdwhtlqugrnlvapkj5pa7nhoczudzfa.opensearch.us-ashburn-1.oci.oraclecloud.com -username bobpeulen -password mypassword123 -index_name index_ad
    ```
 
-   When you run the statement, you should see many rows like the below screenshot. This will run for a few seconds. The script is adding many rows to the index. That way, when you access the OCI OpenSearch dashboard in the next lab, you will have an index created and many rows already added to the index.
+   When you run the statement, you should see many rows like the below screenshot. This will run for a few seconds. The script is adding many rows to the index. That way, when you access the OCI OpenSearch dashboard in the next lab, you will have an index created and many rows already added to the index. The data you will use using has 4 columns and relates to latencies in seconds. The columns are:
+   - **latency_min:** the minimal latency in a specific timestamp
+   - **latency_max:** the maximum latency in a specific timestamp
+   - **latency_diff:** the absolute difference between max and min latency a specific timestamp
+   - **timestamp:** the timestamp with 5 minute intervals
 
    ![lab_2_opensearch_4](images/opensearch_4.png)
 
