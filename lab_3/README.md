@@ -23,11 +23,42 @@ In this lab, you will:
   	![lab_ad_1](images/ad_1.png)
   	![lab_ad_2](images/ad_2.png)
 
-3. Etc
+3. Change the **Name** to opensearch_detector_ad and select the index you just created in the **Index** tab.
 
-4. etc
+    ![lab_setup_1](images/setup_1.png)
 
-5. etc
+4. In the **Timestamp field** select @timestamp. Set **Detector interval** to 2 minutes and the **Interval** to 1 minute. When done, click on **Next**.
+
+    ![lab_setup_2](images/setup_2.png)
+
+5. On the next page, you will define the features that are used to train and use in the anomaly detection. In the first feature, change:
+   - Feature name: latency_max_ad
+   - Aggregation method: max()
+   - Field: latency_max
+
+  When done, click on **Add another feature**. 
+     ![lab_setup_3](images/setup_3.png)
+
+6. For the new feature, we will use the minimal latency. Add the following:
+   - Feature name: latency_min_ad
+   - Aggregation method: min()
+   - Field: latency_min
+
+    ![lab_setup_4](images/setup_4.png)
+
+7. When you added both the maximum and minimal feature, scroll down and click on **Preview anomalies**. This will provide you with several graphs showcasing the data you are working with. When satisfied, click on **Next**
+
+     ![lab_setup_5](images/setup_5.png)
+
+8. In the next page, make sure the **Start real-time detector automatically (recommended)** is enabled. Click on **Next**.
+
+    ![lab_setup_6](images/setup_6.png)
+
+9. The next page is an overview of your selections and the anomaly detection. Review the settings and click on **Create detector** at the bottom of the page.
+
+10. The anomaly detection will now be created, this may take a few seconds to minutes. In background, the available data will be used to train an anomaly detection and following this model will deployed. Afterwards, you can in real-time add more data to the index and the anomaly detection model will be automatically applied to the incoming data. Click on **Real-time results** to see the progress and the main dashboard.
+
+    ![lab_setup_7](images/setup_7.png)
 
 
 
