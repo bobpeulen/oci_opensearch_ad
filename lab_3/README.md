@@ -25,19 +25,20 @@ In this lab, you will:
 
 3. Change the **Name** to opensearch_detector_ad and select the index you just created in the **Index** tab.
 
-    ![lab_setup_1](images/setup_1.png)
+   ![lab_setup_1](images/setup_1.png)
 
 4. In the **Timestamp field** select @timestamp. Set **Detector interval** to 2 minutes and the **Interval** to 1 minute. When done, click on **Next**.
 
-    ![lab_setup_2](images/setup_2.png)
+   ![lab_setup_2](images/setup_2.png)
 
 5. On the next page, you will define the features that are used to train and use in the anomaly detection. In the first feature, change:
    - Feature name: latency_max_ad
    - Aggregation method: max()
    - Field: latency_max
 
-  When done, click on **Add another feature**. 
-     ![lab_setup_3](images/setup_3.png)
+  When done, click on **Add another feature**.
+
+  ![lab_setup_3](images/setup_3.png)
 
 6. For the new feature, we will use the minimal latency. Add the following:
    - Feature name: latency_min_ad
