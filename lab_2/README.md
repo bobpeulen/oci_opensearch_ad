@@ -124,19 +124,19 @@ In the below steps, we use Oracle Linux, you can choose any O.S., please note th
 
 In this taks, you will create a new index in the OCI OpenSearch cluster and add data to the index. You will use the same compute instance that you used to create the NGINX. When you are running debugging mode, make sure to cancel the operation (CTRL+C).
 
-1. In the terminal, run the below command. This will install Git and clone the full Github repository. There are two Python files (part_1.py and part_2.py). In part 1, the Python file will connect to your OCI OpenSearch cluster and create a new index and add data to the index. In part 2, the Python file will mimick a real-time data feed, adding new rows of data every 30 seconds to the index.
+1. In the terminal, run the below command. This will install Git and clone the full Github repository. There are two Python files (part_1.py and part_2.py). In part 1, the Python file will connect to your OCI OpenSearch cluster and create a new index and add data to the index. In part 2, the Python file will mimick a real-time data feed, adding new rows of data every 30 seconds to the index. The last command will install the OpenSearch Python client.
 
    ```
    sudo dnf install git-all -y
-   sudo yum install python3-pip -y
    git clone https://github.com/bobpeulen/oci_opensearch_ad.git
+   pip3 install opensearch-py --user
    ```
 
    ![lab_2_opensearch_2](images/opensearch_2.png)
 
 2. In the next step, you will change the below statement and run the statement in the terminal. Please change the following parameters.
 
-   - [API_ENDPOINT]: Change this value to the API endpoint of your OCI OpenSearch cluster. See the below screenshot. Make sure to remove the "http://" part and please remove the port.
+   - [API_ENDPOINT]: Change this value to the API endpoint of your OCI OpenSearch cluster. See the below screenshot. Make sure to remove the **"http://"** part and please **remove the port**.
    - [USERNAME]: Add your username to access the OCI OpenSearch cluster
    - [PASSWORD]: Add your password to access the OCI OpenSearch cluster
    - [INDEX_NAME]: Add the index name you would like to provide. This can be any name. In this example, we'll use "index_ad"
@@ -146,7 +146,7 @@ In this taks, you will create a new index in the OCI OpenSearch cluster and add 
    ```
    python oci_opensearch_ad/part_1.py -api_endpoint [API_ENDPOINT] -username [USERNAME] -password [PASSWORD] -index_name [INDEX_NAME]
    ```
-   Example - Do not use.
+   An a full example - Do not use.
    ```
    python oci_opensearch_ad/part_1.py -api_endpoint amaaaaaaeicj2tia3mnm2aeijfoshjdwhtlqugrnlvapkj5pa7nhoczudzfa.opensearch.us-ashburn-1.oci.oraclecloud.com -username bobpeulen -password mypassword123 -index_name index_ad
    ```
