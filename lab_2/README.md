@@ -26,7 +26,7 @@ In the below steps, we use Oracle Linux, you can choose any O.S., please note th
 
    ![lab_1_compute_2](images/compute_2.png)
 
-4. In the **Add SSH Keys** box, make sure to either **Save private key** or upload your public key. For more information on the different options to connect to the instance, visit this [Connect to your instance](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/testingconnection.htm) page.
+4. In the **Add SSH Keys** box, make sure to either click on **Save private key** or upload your public key. For more information on the different options to connect to the instance, visit this [Connect to your instance](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/testingconnection.htm) page.
 5. When you completed the steps, click on **Create instance**. This will take 10 - 20 seconds before the instance is active.
 6. When the instance is **Active**, use the Public IP address and Username to SSH into the instance. See [here](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/testingconnection.htm) for more details on how to SSH into your instance.
 
