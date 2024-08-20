@@ -128,7 +128,7 @@ In this taks, you will create a new index in the OCI OpenSearch cluster and add 
 
    ```
    sudo dnf install git-all -y
-   sudo yum install python-pip -y
+   sudo yum install python3-pip -y
    git clone https://github.com/bobpeulen/oci_opensearch_ad.git
    ```
 
