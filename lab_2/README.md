@@ -163,7 +163,7 @@ In this taks, you will create a new index in the OCI OpenSearch cluster and add 
    ![lab_2_opensearch_4](images/opensearch_4.png)
 
 
-   Additionally, the script will remain running and will add more rows every 30 seconds to the index in OCI OpenSearch. Leave the terminal running while you are working on the workshop. Every rows is appended every 30 seconds, but the timestamp in the different rows is each time 5 minutes apart.
+   Additionally, the script will remain running and will add more rows every 5 minutes to the index in OCI OpenSearch. Please leave the script running.
 
 
 You may now **proceed to the next lab.**
