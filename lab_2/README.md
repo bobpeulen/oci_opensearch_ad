@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab, you will access the OCI OpenSearch Dashboard using NGIX.
+In this lab, you will access the OCI OpenSearch Dashboard using NGIX. By doing so, you will be able to use a public URL to access the OCI OpenSearch dashboards. When you have access, you will use the same compute instance to run a Python script. The Python script will help you in creating a new index, adding sample data to the index, and lastly the Python script will continuously run to ensure you have a "near real-time" live stream of data being added to your index. 
 
 *Estimated Time:* 20 minutes
 
