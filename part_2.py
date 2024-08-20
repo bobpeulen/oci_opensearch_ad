@@ -45,6 +45,14 @@ def create_opensearch_client(api_endpoint, username, password):
     
     return client
 
+
+def datetime_range(start, end, delta):
+    current = start
+    while current < end:
+        yield current
+        current += delta
+
+
 def add_ad_data(index_name, client):
     
     loop = 0
