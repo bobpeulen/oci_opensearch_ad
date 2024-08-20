@@ -34,7 +34,7 @@ In this lab, you will:
    
     ![lab_vcn_5](images/vcn_5.png)
 
-7. In the security list, click on **Add Ingress Rules**. Add "0.0.0.0/0" to the **Source CIDR** box and add "9200,5601" to the **Destination Port Range**. Leave the other boxes empty or default. Click on**Add Ingress Rules**.
+7. In the security list, click on **Add Ingress Rules**. Add "0.0.0.0/0" to the **Source CIDR** box and add "9200,5601" to the **Destination Port Range**. Leave the other boxes empty or default. Click on **Add Ingress Rules**.
    
     ![lab_vcn_6](images/vcn_6.png)
 
