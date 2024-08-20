@@ -124,6 +124,45 @@ def add_ad_data(index_name, client):
         
     return list_of_dates
 
+def start_ad_loop(index_name, client, list_of_dates):
+    
+    #get the last date in the list of dates
+    last_date_used = list_of_dates[-1]
+    
+    #convert last_date_used to timestamp
+    timestamp = datetime_object = datetime.strptime(last_date_used, '%Y-%m-%d %H:%M:%S')
+    
+    #start with the next id.
+    loop = 2018
+ 
+    #create a range to loop through. 300 items.
+    full_range = range(300)
+    
+    for idx in full_range:
+        
+        #for each loop, add 5 min to the timestamp
+        timestamp = timestamp + timedelta(minutes=5)
+    
+        latency_min = round(random.uniform(300.1, 600.9),2)
+        latency_max = round(random.uniform(700.1, 3100.9),2)
+        latency_diff = latency_max - latency_min
+
+        print(f"Loading latency with min {latency_min}, max {latency_max}, on timestamp {timestamp}")
+
+        input_payload = {"@timestamp": timestamp,
+                        "latency_min": latency_min,
+                        "latency_max": latency_max,
+                        "latency_diff": latency_diff}
+
+        #add new row to the index
+        response = client.index(index = index_name, body = input_payload, id = loop, refresh = True)
+
+        #create next id
+        loop+=1
+
+         #wait 30 seconds for next iteration        
+        time.sleep(30)
+
 
 def main():
     
@@ -136,7 +175,7 @@ def main():
     #add the data row ty row to the index
     list_of_dates = add_ad_data(index_name, client)
     
-    return list_of_dates
+    start_ad_loop(index_name, client, list_of_dates)
 
 if __name__ == '__main__':
     main()
