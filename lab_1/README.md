@@ -49,11 +49,11 @@ In this lab, you will:
 
 3. In the **Configure security** screen, add a **username** and **password**. You will need these credentials later. Click on **Next**.
 
-4. In the **Configure nodes** screen, leave the default settings as they. Optionally, you may increase the nodes. Click on **Next**.
+4. In the **Configure nodes** screen, leave the default settings as they are. Optionally, you may increase the nodes. Click on **Next**.
 
 5. In the **Configure networking** screen, please select the VCN you just created and select the associated **Private subnet**. Click on **Next**.
 
-6. Review the summary and click on **Create cluster**. After, click on **View details**. The creation of a cluster might take several minutes. Step inside the cluster by clicking the name.
+6. Review the summary and click on **Create cluster**. Afterwards, click on **View details**. The creation of a cluster might take several minutes. Step inside the cluster by clicking the name.
 
    ![lab_opensearch_2](images/opensearch_2.png)
 
