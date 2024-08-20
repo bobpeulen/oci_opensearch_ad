@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab,xx
+In this lab, you will configure the main parts. First, you will set up a VCN and configure the ports in the subnet. Then, you will create a new OCI OpenSearch cluster. Lastly, you will create a new ONS Topic. This will be used in the end to automatically notify you by e-mail of any anomalous behaviour in the data accessing OCI OpenSearch.
 
 *Estimated Time:* 30 minutes
 
