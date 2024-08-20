@@ -62,7 +62,7 @@ In the below steps, we use Oracle Linux, you can choose any O.S., please note th
            server [ADD_YOUR_DASHBOARD_PRIVATE_IP_HERE]:5601;}
    ```
 
-12. Go back to your terminal and run the below. This will open the config file for the NGINX. In this config file, we can add the routing: from https traffic towards the OpenSearch dashboards using the public IP of the instance you are working on.
+12. Go back to your terminal and run the below. This will open the config file for the NGINX. In this config file, we can add the routing from http traffic towards the OpenSearch dashboards using the public IP of the instance you are working on.
        ```
        sudo nano /etc/nginx/nginx.conf
        ```
