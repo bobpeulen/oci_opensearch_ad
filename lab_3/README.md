@@ -27,7 +27,7 @@ In this lab, you will:
 
    ![lab_setup_1](images/setup_1.png)
 
-4. In the **Timestamp field** select @timestamp. Set **Detector interval** to 2 minutes and the **Interval** to 1 minute. When done, click on **Next**.
+4. In the **Timestamp field** select @timestamp. Set **Detector interval** to 5 minutes and the **Interval** to 1 minute. When done, click on **Next**.
 
    ![lab_setup_2](images/setup_2.png)
 
