@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab, you will access the OCI OpenSearch Dashboard.
+In this lab, you will first set up and start a Detector, focusing on Anomaly Detection. You will configure the detector and start it. Afterwards, you will set up a new trigger based on incoming values. The trigger will be integrated with the Oracle Notification Service (ONS). Based on the trigger and the result of the anomaly detection, you will be notified by e-mail when an anomaly hits a certain treshold. 
 
 *Estimated Time:* 30 minutes
 
