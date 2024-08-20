@@ -97,7 +97,7 @@ def start_ad_loop(index_name, client, list_of_dates):
     loop = 2018
  
     #create a range to loop through. 300 items.
-    full_range = range(5)
+    full_range = range(300)
     
     for idx in full_range:
         
