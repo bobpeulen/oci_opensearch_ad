@@ -61,6 +61,9 @@ In this lab, you will:
 
     ![lab_setup_7](images/setup_7.png)
 
+  Please note. The Python script is appending the index with new rows every 30 seconds. Depending on how fast you completed the previous steps, after 5 - 10 minutes, the script should have appended enough new rows to be on the same timing as you are or already beyond. Afterwards, the monitor will review latest row every 5 minutes. 
+
+  ![lab_setup_7](images/setup_8.png)
 
 
 ## Task 2: Set up automated e-mail notification using ONS
