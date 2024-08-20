@@ -134,7 +134,7 @@ In this taks, you will create a new index in the OCI OpenSearch cluster and add 
 
    ![lab_2_opensearch_2](images/opensearch_2.png)
 
-2. In the next step, you will change the below statement and run the statement in the terminal. Please change the following parameters.
+2. In the next step, please change the below paramters in the snippet starting with "python ..". When you changed the paratmers, run the statement in the terminal. Please change the following parameters.
 
    - **[API_ENDPOINT]:** Change this value to the API endpoint of your OCI OpenSearch cluster. See the below screenshot. Make sure to remove the **"http://"** part and please **remove the port**.
 
@@ -147,11 +147,11 @@ In this taks, you will create a new index in the OCI OpenSearch cluster and add 
    ![lab_2_opensearch_3](images/opensearch_3.png)
 
    ```
-   python oci_opensearch_ad/part_1.py -api_endpoint [API_ENDPOINT] -username [USERNAME] -password [PASSWORD] -index_name [INDEX_NAME]
+   python oci_opensearch_ad/main.py -api_endpoint [API_ENDPOINT] -username [USERNAME] -password [PASSWORD] -index_name [INDEX_NAME]
    ```
    See below for a full example. Do not use this example.
    ```
-   python oci_opensearch_ad/part_1.py -api_endpoint amaaaaaaeicj2tia3mnm2aeijfoshjdwhtlqugrnlvapkj5pa7nhoczudzfa.opensearch.us-ashburn-1.oci.oraclecloud.com -username bobpeulen -password mypassword123 -index_name index_ad
+   python oci_opensearch_ad/main.py -api_endpoint amaaaaaaeicj2tia3mnm2aeijfoshjdwhtlqugrnlvapkj5pa7nhoczudzfa.opensearch.us-ashburn-1.oci.oraclecloud.com -username bobpeulen -password mypassword123 -index_name index_ad
    ```
 
    When you run the statement, you should see many rows like the below screenshot. This will run for a few seconds. The script is adding many rows to the index. That way, when you access the OCI OpenSearch dashboard in the next lab, you will have an index created and many rows already added to the index. The data you will use using has 4 columns and relates to latencies in seconds. The columns are:
@@ -163,15 +163,8 @@ In this taks, you will create a new index in the OCI OpenSearch cluster and add 
    ![lab_2_opensearch_4](images/opensearch_4.png)
 
 
-3. In the next step, you will run the part_2.py. You can use the exact same Python snippet as used in running part_1 and only change "part_1.py" into "part_2.py". Alternatively, replace API_ENDPOINT, USERNAME, PASSWORD, and INDEX_NAME in the below snippet and run in the terminal.
+   Additionally, the script will remain running and will add more rows every 30 seconds to the index in OCI OpenSearch. Leave the terminal running while you are working on the workshop. Every rows is appended every 30 seconds, but the timestamp in the different rows is each time 5 minutes apart.
 
-   When you run the below snippet, the Python code will add more rows to the index and then every 30 seconds add another row.
-   
-   ```
-   python oci_opensearch_ad/part_2.py -api_endpoint [API_ENDPOINT] -username [USERNAME] -password [PASSWORD] -index_name [INDEX_NAME]
-   ```
-
-   When you ran the below Python snippet for part_2, leave it running while you proceed with the next steps.
 
 You may now **proceed to the next lab.**
 
