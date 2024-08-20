@@ -136,17 +136,20 @@ In this taks, you will create a new index in the OCI OpenSearch cluster and add 
 
 2. In the next step, you will change the below statement and run the statement in the terminal. Please change the following parameters.
 
-   - [API_ENDPOINT]: Change this value to the API endpoint of your OCI OpenSearch cluster. See the below screenshot. Make sure to remove the **"http://"** part and please **remove the port**.
-   - [USERNAME]: Add your username to access the OCI OpenSearch cluster
-   - [PASSWORD]: Add your password to access the OCI OpenSearch cluster
-   - [INDEX_NAME]: Add the index name you would like to provide. This can be any name. In this example, we'll use "index_ad"
+   - **[API_ENDPOINT]:** Change this value to the API endpoint of your OCI OpenSearch cluster. See the below screenshot. Make sure to remove the **"http://"** part and please **remove the port**.
+
+   - **[USERNAME]:** Add your username to access the OCI OpenSearch cluster
+
+   - **[PASSWORD]:** Add your password to access the OCI OpenSearch cluster
+
+   - **[INDEX_NAME]:** Add the index name you would like to provide. This can be any name. In this example, we'll use "index_ad"
 
    ![lab_2_opensearch_3](images/opensearch_3.png)
 
    ```
    python oci_opensearch_ad/part_1.py -api_endpoint [API_ENDPOINT] -username [USERNAME] -password [PASSWORD] -index_name [INDEX_NAME]
    ```
-   An a full example - Do not use.
+   See below for a full example. Do not use this example.
    ```
    python oci_opensearch_ad/part_1.py -api_endpoint amaaaaaaeicj2tia3mnm2aeijfoshjdwhtlqugrnlvapkj5pa7nhoczudzfa.opensearch.us-ashburn-1.oci.oraclecloud.com -username bobpeulen -password mypassword123 -index_name index_ad
    ```
