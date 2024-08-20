@@ -4,7 +4,7 @@
 
 In this lab, you will access the OCI OpenSearch Dashboard.
 
-*Estimated Time:* 20 minutes
+*Estimated Time:* 30 minutes
 
 ### Objectives
 
