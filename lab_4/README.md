@@ -1,4 +1,4 @@
-# Lab 4 - Start near real-time Anomaly Detection
+# Lab 4 - Review the real-time anomalies
 
 ## Introduction
 
