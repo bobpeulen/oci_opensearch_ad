@@ -56,7 +56,7 @@ In the below steps, we use Oracle Linux, you can choose any O.S., please note th
 
    ![lab_1_compute_5](images/compute_5.png)
 
-11. Copy the below statement and replace the **[ADD_YOUR_DASHBOARD_PRIVATE_IP_HERE]** with your dashboard's private IP. 
+11. Copy the below statement and replace the **[ADD_YOUR_DASHBOARD_PRIVATE_IP_HERE]** with your dashboard's private IP. The OpenSearch private IP is only visible when the cluster is Active.
    ```
    upstream backend {
       server [ADD_YOUR_DASHBOARD_PRIVATE_IP_HERE]:5601;}
