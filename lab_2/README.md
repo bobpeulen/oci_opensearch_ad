@@ -101,7 +101,9 @@ In the below steps, we use Oracle Linux, you can choose any O.S., please note th
 
    ![lab_1_compute_8](images/compute_8.png)
 
-18. You can now open the OCI OpenSearch dashboard by using the public IP. Use the public IP of you compute instance in any browser. Make sure to use **http://**. and make sure you are not on VPN. You can log in using the credentials you provided when creating the OCI OpenSearch cluster. Note. Make sure your security list in your Public Subnet allows traffic from outside. Example:
+18. You can now open the OCI OpenSearch dashboard by using the public IP. Use the public IP of you compute instance in any browser. Make sure to use **http://**. and make sure you are not on VPN. You can log in using the credentials you provided when creating the OCI OpenSearch cluster. Additionally, make sure your security list in your Public Subnet allows traffic from outside.
+
+    An example of a full public URL to access your OCI OpenSearch dashboard:
     ```
     http://158.101.107.97/
     ```
