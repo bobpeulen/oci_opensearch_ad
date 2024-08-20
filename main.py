@@ -135,8 +135,8 @@ def start_ad_loop(index_name, client, list_of_dates):
     #start with the next id.
     loop = 2018
  
-    #create a range to loop through. 300 items.
-    full_range = range(300)
+    #create a range to loop through. 500 items.
+    full_range = range(500)
     
     for idx in full_range:
         
@@ -160,8 +160,8 @@ def start_ad_loop(index_name, client, list_of_dates):
         #create next id
         loop+=1
 
-         #wait 30 seconds for next iteration        
-        time.sleep(30)
+         #wait 5 minutes for next iteration        
+        time.sleep(300)
 
 
 def main():
