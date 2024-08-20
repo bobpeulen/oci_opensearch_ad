@@ -15,7 +15,7 @@ In this lab, you will:
 
 ## Task 1: Create a compute host with NGINX to access the dashboards
 
-In this example we choose Oracle Linux, you can choose any O.S., please note that paths may be slightly different on specific opereating systems.
+In the below steps, we use Oracle Linux, you can choose any O.S., please note that paths may be slightly different on specific opereating systems.
 
 1.	Click on the hamburger menu, go to **Compute** and click on **Instances**. Click on **Create Instance**.
 
