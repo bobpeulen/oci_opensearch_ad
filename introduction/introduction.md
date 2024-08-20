@@ -42,6 +42,6 @@ In this workshop, you will follow multiple labs. For each lab, the individual st
 
 ## Acknowledgements
 * **Authors**:
-    * [xx](https://www.linkedin.com/in/bx), 
-    * [xx](https://www.linkedin.com/in/pxx/), 
-* **Last Updated By/Date** - xx, July 2024
+    * [Bob Peulen](https://www.linkedin.com/in/bobpeulen/)
+    * [Robert de Laat](https://www.linkedin.com/in/rdelaat/) 
+* **Last Updated By/Date** - Bob Peulen, September 2024
