@@ -2,7 +2,7 @@
 
 ## About this Workshop
 
-This workshop runs through the steps to create and start an Anomaly Detection detector in [OCI OpenSearch](https://www.oracle.com/uk/cloud/search/). You will start by provisioning an OCI OpenSearch cluster and set up a topic in the [OCI Notification Service](https://docs.oracle.com/en-us/iaas/Content/Notification/Concepts/notificationoverview.htm). Afterwards, you will access the OpenSearch dashboards by using NGINX, create a new index in OpenSearch, add sample data to the index. Then, you will create an Anomaly Detection detector using the OpenSearch dashboards. Once implemented, using the compute instance (also used for NGINX), you will run a script to feed new data every couple of seconds to your Anomaly Detection detector. Lastly, you will set up a trigger to receive automated e-mail notifications, using Oracle Notification Service. As a result, when anomalous behaviour in your data is detected, you will be notified automatically.
+This workshop runs through the steps to create and start an Anomaly Detection detector in [OCI OpenSearch](https://www.oracle.com/uk/cloud/search/). You will start by provisioning an OCI OpenSearch cluster and set up a topic in the [OCI Notification Service](https://docs.oracle.com/en-us/iaas/Content/Notification/Concepts/notificationoverview.htm). Afterwards, you will access the OpenSearch dashboards by using NGINX, create a new index in OpenSearch, and add sample data to the index. Then, you will create an Anomaly Detection detector using the OpenSearch dashboards. Once implemented, using the compute instance (also used for NGINX), you will run a script to feed new data every couple of seconds to your Anomaly Detection detector. Lastly, you will set up a trigger to receive automated e-mail notifications, using Oracle Notification Service. As a result, when anomalous behaviour in your data is detected, you will be notified automatically.
 
 The workshop uses Anomaly Detection as defined by OpenSearch. See the full documentation on Anomaly Detection [here](https://opensearch.org/docs/latest/observing-your-data/ad/index/).
 
@@ -23,14 +23,15 @@ In this workshop, you will follow multiple labs. For each lab, the individual st
   
 **Lab 2 - Access the Dashboard and index creation**
 * Create a compute host with NGINX to access the dashboards
-* Create a new index and add data to to the index using the compute
+* Create a new index in the OCI OpenSearch dashboar
+* Add historical data to the newly created index and set up a real-time feed
   
 **Lab 3 - Create an Anomaly Detection detector**
 * Create an Anomaly Detection Detector in OCI OpenSearch
 * Set up automated e-mail notification using ONS
   
-**Lab 4 - Start near real-time Anomaly Detection**
-* Start the real-time Anomaly Detection Detector using the VM
+**Lab 4 - Review the real-time anomalies**
+* Review the dashboards
 * Review automatic e-mail notification
 
 
