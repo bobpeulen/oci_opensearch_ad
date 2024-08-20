@@ -90,6 +90,7 @@ You may now **proceed to the next lab.**
 
 ## Acknowledgements
 * **Authors**:
-    * x
-    * x
-* **Last Updated By/Date** -xa, July 2024
+    * [Bob Peulen](https://www.linkedin.com/in/bobpeulen/)
+    * [Robert de Laat](https://www.linkedin.com/in/rdelaat/) 
+* **Last Updated By/Date** - Bob Peulen, September 2024
+  
