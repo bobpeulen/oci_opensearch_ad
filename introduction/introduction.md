@@ -30,10 +30,6 @@ In this workshop, you will follow multiple labs. For each lab, the individual st
 * Create an Anomaly Detection Detector in OCI OpenSearch
 * Set up automated e-mail notification using ONS
   
-**Lab 4 - Review the real-time anomalies**
-* Review the dashboards
-* Review automatic e-mail notification
-
 
 ## Prerequisites
 * An Oracle Cloud Account - Please view this workshop's LiveLabs landing page to see which environments are supported
